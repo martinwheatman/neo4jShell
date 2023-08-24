@@ -1,0 +1,20 @@
+#!/bin/bash
+
+# DELETE = MATCH (n:Greeting {message:"hello, world"}) DELETE n
+# CREATE = CREATE (a:Greeting) SET a.message = \"hello, world\" RETURN a.message + ', from node ' + id(a)
+cd ~/src/java/neo4j
+
+## doesn't seem to like leading whitespace(???)
+java -cp \
+    .:\
+lib/neo4j-java-driver-5.8.0.jar:\
+lib/reactive-streams-1.0.4.jar:\
+lib/netty-buffer-4.1.94.Final.jar:\
+lib/netty-codec-4.1.94.Final.jar:\
+lib/netty-common-4.1.94.Final.jar:\
+lib/netty-handler-4.1.94.Final.jar:\
+lib/netty-resolver-4.1.94.Final.jar:\
+lib/netty-tcnative-classes-2.0.61.Final.jar:\
+lib/netty-transport-4.1.94.Final.jar:\
+lib/netty-transport-native-unix-common-4.1.94.Final.jar:\
+		org.neo4j.Shell $*
