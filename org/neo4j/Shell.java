@@ -50,10 +50,10 @@ public class Shell implements AutoCloseable {
 				sb.append( args[ i ]+" " );
 			String value  = sb.toString();
 			
-			if (action.equals("CREATE"))
+			if (action.equals("create"))
 				shell("CREATE (a:"+ type +") SET a."+ attr +" = '"+ value +"' RETURN a."+ attr +" + ', from node ' + id(a)", true);
 
-			else if (action.equals("DELETE"))
+			else if (action.equals("delete"))
 				shell("MATCH (n:"+ type +" {"+ attr +":'"+ value +"'}) DELETE n", false);
 			
 			//else if (action.equals( "LINK" ))
