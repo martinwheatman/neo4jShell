@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="lib/neo4j-java-driver-5.8.0.jar"/>
+	<classpathentry kind="lib" path="lib/netty-buffer-4.1.94.Final.jar"/>
+	<classpathentry kind="lib" path="lib/netty-codec-4.1.94.Final.jar"/>
+	<classpathentry kind="lib" path="lib/netty-common-4.1.94.Final.jar"/>
+	<classpathentry kind="lib" path="lib/netty-handler-4.1.94.Final.jar"/>
+	<classpathentry kind="lib" path="lib/netty-resolver-4.1.94.Final.jar"/>
+	<classpathentry kind="lib" path="lib/netty-tcnative-classes-2.0.61.Final.jar"/>
+	<classpathentry kind="lib" path="lib/netty-transport-4.1.94.Final.jar"/>
+	<classpathentry kind="lib" path="lib/netty-transport-native-unix-common-4.1.94.Final.jar"/>
+	<classpathentry kind="lib" path="lib/reactive-streams-1.0.4.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
